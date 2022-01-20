@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Skoluppgift">
+<meta name="author" content="David Radu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Day - Väder</title>
+
+<style>
+
+    ul#menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: royalblue;
+    }
+  
+    a.menu {
+      display: block;
+      padding: 20px;
+      width: 8vw;
+      background-color: royalblue;
+  
+    }
+  
+    li {
+      float: left;
+  border-right: 1px solid #bbb;
+    }
+    li a {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    }
+  
+    li:last-child {
+      border-right: none;
+    }
+  
+    li a:hover {
+      color: black;
+    }
+  
+    li a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+  
+    li a.active:hover {
+      background-color: #04aa6d;
+      color: black;
+    }
+  
+    li a:hover:not(.active) {
+    color: black;
+  }
+
+</style>
+    <body>
+        
+        <div align="center">
+            <img src="https://helsingborg.se/wp-content/uploads/2017/05/helsingborg-1.svg" alt="Gå till startsidan" width="600" height="200">
+                        </div>
+
+                        <ul id="menu">
+                            <li><a class="menu" href="index.html">Hem</a></li>
+                            <li><a class="menu" class="active" href="väder.html">Väder</a></li>
+                                </ul>
+<br>
+        <iframe src='https://xn--vder24-bua.se/index.php/vader-widget/?widgettype=black&widgetcity=helsingborg' title='Väderwidget' style='height:250px; min-width:215px; width:100%; max-width:100%;' name='weatheriFrame' scrolling='0' frameborder='0' ></iframe>
+  </body>
+</head>
+</html>
